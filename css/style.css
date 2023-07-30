@@ -660,10 +660,10 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
       .popup {
         box-sizing: border-box;
          padding: 60px 30px;
-        max-height: 600px;
+        
       width: 400px;
        background-color: #ffffff;
-        position: fixed;
+        position: relative;
         margin-top: 30px;
         
       }
@@ -791,7 +791,9 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
            padding-bottom: 125px
         }
         .header-blog{
-          max-width: 700px;
+          width: 100%;
+          padding-left: 35px;
+          padding-right: 35px;
         }
         .menu {
           display: none;
@@ -837,8 +839,19 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
           box-sizing: border-box;
 
         }
+        .posts-list::after {
+          content: "";
+          display: block;
+          width: 100%;
+          border-bottom: 3px solid #eeeeee;
+          
+        }
         .posts-list {
           display:block;
+        }
+        .shop {
+          padding-left: 35px;
+          padding-right: 35px;
         }
         .shop-posts {
           flex-wrap: wrap;
@@ -864,10 +877,16 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
           
           .sidebar {
             margin-left: 45px;
+            margin-top: 30px;
           }
           .base {
-            max-width: 700px;
+            width: 100%;
             box-sizing: border-box;
+            padding-left: 35px;
+            padding-right: 35px;
+          }
+          .imgdawn {
+            max-width: 100%;
           }
       }
       @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
@@ -877,7 +896,9 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
           padding-bottom: 125px
        }
        .header-blog{
-        max-width: 700px;
+        width: 100%;
+          padding-left: 35px;
+          padding-right: 35px;
       }
       .menu {
         display: none;
@@ -923,8 +944,19 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
         box-sizing: border-box;
 
       }
+      .posts-list::after {
+        content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 3px solid #eeeeee;
+        
+      }
       .posts-list {
         display:block;
+      }
+      .shop {
+        padding-left: 35px;
+        padding-right: 35px;
       }
       .shop-posts {
         flex-wrap: wrap;
@@ -950,10 +982,16 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
         
         .sidebar {
           margin-left: 45px;
+          margin-top: 30px;
         }
         .base {
-          max-width: 700px;
+          width: 100%;
           box-sizing: border-box;
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+        .imgdawn {
+          max-width: 100%;
         }
     }
       @media (max-width: 640px) and (orientation: landscape) {
@@ -961,7 +999,9 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
           background-image: url("../images/banner-mobile.jpg");
        }
        .base {
-        max-width: 360px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
         box-sizing: border-box;
         display: block;
         margin: auto;
@@ -1006,7 +1046,7 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
         box-sizing: border-box;
       }
       .trends-list{
-        
+        box-sizing: border-box;
         width: 100%;
       }
       .trends-posts{
@@ -1019,7 +1059,9 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
         width: 100%;
       }
       .shop {
-        max-width: 360px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
       }
       .shop-posts {
         display: block;
@@ -1033,6 +1075,7 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
       .sidebar {
         margin-left: 0px;
         width: 100%;
+        margin-top: 30px;
       }
       .field-email {
         width: 100%;
@@ -1058,6 +1101,16 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
   }
   .trends-list:nth-child(n+2)  {
     margin-top: 6px;
+}
+.trends-base{
+  width: 100%;
+}
+.posts-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid #eeeeee;
+  
 }
       }
       @media (max-width: 640px) and (orientation: portrait) {
@@ -1097,10 +1150,12 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
         border: 2px solid #ffffff;
       }
        .base {
-        max-width: 360px;
+        padding-left: 15px;
+        padding-right: 15px;
         box-sizing: border-box;
         display: block;
         margin: auto;
+        width: 100%;
       }
       .posts-list {
         display:block;
@@ -1110,9 +1165,10 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
         display: block;
       }
       .trends-list{
-        
+        box-sizing: border-box;
         width: 100%;
       }
+
       .posts-base {
         margin-left: 0px;
     }
@@ -1120,7 +1176,9 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
       width: 100%;
     }
       .shop {
-        max-width: 360px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
       }
       .shop-posts {
         display: block;
@@ -1134,6 +1192,7 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
       .sidebar {
         margin-left: 0px;
         width: 100%;
+        margin-top: 30px;
       }
       .field-email {
         width: 100%;
@@ -1159,6 +1218,16 @@ ul, li, article, div, time, h3, h2, h1, a, main, aside, address, nav, img, secti
   }
   .trends-list:nth-child(n+2)  {
        margin-top: 6px;
+}
+.trends-base{
+  width: 100%;
+}
+.posts-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid #eeeeee;
+  
 }
       }
       
